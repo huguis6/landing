@@ -30,7 +30,7 @@
   }
   .aboutUs_text {
     padding-left: 0;
-    text-align: center;
+    text-align: left;
   }
   .servicesCards, .servicesCards2 {
     flex-wrap: wrap;
@@ -57,6 +57,24 @@
   }
 }
 
+@media (max-width: 1407px) {
+  .servicesCards, .servicesCards2 {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    justify-content: center;
+  }
+  .servicesCards .card, .servicesCards2 .card {
+    max-width: 95vw;
+    min-width: 180px;
+    margin: 0.5rem auto;
+    padding: 18px 8px;
+  }
+  .servicesCards .card img, .servicesCards2 .card img {
+    max-width: 120px;
+    height: auto;
+  }
+}
+
 @media (max-width: 600px) {
   .navbar .navbar-brand, .navbar .nav-link {
     font-size: 1rem;
@@ -70,10 +88,8 @@
     gap: 0.5rem;
     padding: 0 2vw;
   }
-  .aboutUs_text {
-    font-size: 0.95rem;
-    padding-left: 0;
-    text-align: center;
+  .aboutUs_text .mt-lg-4{
+    text-align: left;
   }
   .services_section, .services_section2, .contactUs-section {
     min-height: 220px;
@@ -99,6 +115,28 @@
   }
   .contactUs-form input, .contactUs-form textarea {
     font-size: 0.95rem;
+  }
+  .expert-icon{
+    margin-top: 35px;
+    flex-direction: column;
+    align-items: start !important;
+ 
+  }
+  .ms-5 {
+    margin-top: 25px;
+    margin-left: 0px !important;
+  }
+
+  /* New styles for feature icons grouping and size */
+  .presentation_container .container .row > .col.d-flex.flex-column.align-items-center.feature-col {
+    flex-direction: row !important;
+    flex: 1 1 100%;
+    max-width: 50%;
+    margin-bottom: 1rem;
+  }
+  .presentation_container .container .row > .col.d-flex.flex-column.align-items-center.feature-col .feature-icon {
+    width: 64px;
+    height: 64px;
   }
 }
 /* --- CONTACT US SECTION --- */
@@ -166,6 +204,10 @@
   .contactUs-left-shape {
     display: none;
   }
+  .aboutUs_text .mt-lg-4{
+    text-align: left;
+  }
+  
 }
 /* --- SERVICES SECTION 2 --- */
 .services_section2 {
@@ -256,6 +298,10 @@
   }
   .servicesCards2 .card img {
     max-width: 80px;
+  }
+  .checks-container{
+    display: flex;
+    flex-direction: column;
   }
 }
 .carousel_content {
@@ -765,24 +811,35 @@ nav{
 @media (max-width: 600px) {
   .experience-overlap-section {
     width: 98vw;
-    height: 320px;
+    height: auto;
     min-width: unset;
+    padding: 0 1rem;
   }
   .experience-bg {
     border-radius: 10px;
   }
   .experience-images {
-    top: 18px;
-    gap: 10px;
+    position: relative !important; 
+    flex-direction: column;
+  }
+   .experience-images img{
+    position: relative;
+      width: 100%;
+      height: 100%;
+  }
+
+  .experience-info{
+    position: relative;
+    display: none;
   }
   .exp-img {
-    width: 90px;
-    height: 120px;
-    border-radius: 10px;
+    margin-bottom: 1.5rem;
   }
   .experience-info {
     left: 50%;
     bottom: 8px;
+    width: 250px;
+    height: 100px;
     transform: translateX(-50%);
     padding: 10px 16px 8px 16px;
     min-width: 90px;
