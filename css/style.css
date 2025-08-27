@@ -1,11 +1,9 @@
-/* --- BOMBEOS Y SOLARIZACIÓN --- */
 .bombeo-solar-section, .solarizacion-section {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
 .bombeo-solar-section .container, .solarizacion-section .container {
-  background: #f6f7fa;
-  border-radius: 16px;
+    border-radius: 16px;
   border: 1.5px solid #e0e3e8;
   box-shadow: none;
   padding: 2.2rem 1.5rem 2.2rem 1.5rem;
@@ -22,6 +20,8 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+
 .bombeo-solar-section h2::before {
   content: '';
 }
@@ -615,7 +615,6 @@ body {
   margin-bottom: 0.5rem;
 }
 .presentation_container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
