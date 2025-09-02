@@ -7,7 +7,7 @@
   border: 1.5px solid #e0e3e8;
   box-shadow: none;
   padding: 2.2rem 1.5rem 2.2rem 1.5rem;
-  max-width: 700px;
+  max-width: 100%;
 }
 .bombeo-solar-section h2, .solarizacion-section h2 {
   color: #b8000a;
