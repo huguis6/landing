@@ -147,6 +147,10 @@
     min-height: 38vh;
     padding: 0 2vw;
   }
+  .lead{
+    font-size: 0px;
+  }
+
   .aboutUs_container {
     gap: 0.5rem;
     padding: 0 2vw;
@@ -1319,4 +1323,40 @@ nav{
   font-size: 1rem;
   padding: 0.5rem 1.6rem 0.4rem 1.6rem;
   box-shadow: 0 4px 24px rgba(27, 27, 41, 0.07);
+}
+
+.feature-bg-dark {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  background: url('https://wp.aqlova.com/biddut/wp-content/uploads/2024/10/bg-1.png') center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+.feature-bg-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 31, 37, 0.78); /* Ajusta la opacidad según prefieras */
+  z-index: 1;
+  pointer-events: none;
+}
+.feature-bg-dark > .container {
+  position: relative;
+  z-index: 2;
+}
+.feature-bg-dark h1 {
+  color: #fff;
+}
+.feature-bg-dark .feature-col {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #837f7f;
+}
+.feature-bg-dark .feature-col:hover {
+  background: #d90429;
+  color: #fff !important;
+  border-color: transparent;
 }
