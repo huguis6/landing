@@ -1339,7 +1339,7 @@ nav{
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(31, 31, 37, 0.78); /* Ajusta la opacidad según prefieras */
+  background: rgba(0, 0, 0, 0.637); /* Ajusta la opacidad según prefieras */
   z-index: 1;
   pointer-events: none;
 }
