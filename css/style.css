@@ -532,6 +532,12 @@ border: 1px solid #dfdcdc;
   border: 1px solid #fff;
 }
 
+.fa-solid .fa-arrow-right {
+  background: #fff;
+  color: #e30613 !important;
+  border: 1px solid #fff;
+}
+
 .custom-solution-card:hover .text-muted {
   color: #fff !important;
 }
