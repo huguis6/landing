@@ -128,7 +128,16 @@
     height: auto;
   }
 }
-
+@media (max-width: 720px) {
+  .custom-solution-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 600px) {
   .navbar .navbar-brand, .navbar .nav-link {
     font-size: 1rem;
@@ -148,6 +157,10 @@
   .services_section, .services_section2, .contactUs-section {
     min-height: 220px;
     padding: 0 2vw;
+  }
+
+  .cardSpecial{
+    margin-top: 50px !important;
   }
   .servicesCards, .servicesCards2 {
     gap: 0.1rem;
@@ -325,6 +338,11 @@
   }
 }
 
+@media (max-width: 770px) {
+
+  
+}
+
 @media (max-width: 900px) {
   .servicesCards2 {
     flex-wrap: wrap;
@@ -336,7 +354,7 @@
     min-width: 120px;
   }
   .servicesCards2 .card img {
-    max-width: 140px;
+    max-width: 250px;
   }
 }
 
@@ -352,7 +370,8 @@
     min-width: 80px;
   }
   .servicesCards2 .card img {
-    max-width: 80px;
+    margin: auto;
+    max-width: 300px;
   }
   .checks-container{
     display: flex;
@@ -417,6 +436,10 @@ border: 1px solid #dfdcdc;
 }
 
 .feature-col:hover .feature-icon {
+  filter: brightness(0) invert(1) !important;
+}
+
+.custom-solution-card:hover .feature-icon {
   filter: brightness(0) invert(1) !important;
 }
 .custom-solution-card {
@@ -1289,4 +1312,5 @@ nav{
   font-weight: 700;
   font-size: 1rem;
   padding: 0.5rem 1.6rem 0.4rem 1.6rem;
+  box-shadow: 0 4px 24px rgba(27, 27, 41, 0.07);
 }
