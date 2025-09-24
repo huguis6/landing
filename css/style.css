@@ -1351,9 +1351,8 @@ nav{
   color: #fff;
 }
 .feature-bg-dark .feature-col {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #837f7f;
+  background: #fff;
+  color: #000;
 }
 .feature-bg-dark .feature-col:hover {
   background: #d90429;
